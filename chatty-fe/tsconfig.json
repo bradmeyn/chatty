@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "baseUrl": ".",
+    "paths": {
+      "@crm/shared-types": ["../packages/shared-types/src/index.ts"],
+      "@/*": ["./src/*"],
+      "@auth/*": ["./src/lib/features/auth/*"],
+      "@clients/*": ["./src/lib/features/clients/*"],
+      "@notes/*": ["./src/lib/features/notes/*"],
+      "@components/*": ["./src/lib/components/*"],
+      "@contexts/*": ["./src/lib/contexts/*"],
+      "@hooks/*": ["./src/lib/hooks/*"],
+      "@utils/*": ["./src/lib/utils/*"],
+      "@schemas/*": ["./src/lib/schemas/*"],
+      "@services/*": ["./src/lib/services/*"]
+    }
+  }
+}

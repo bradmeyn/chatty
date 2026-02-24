@@ -1,0 +1,18 @@
+{
+  "version": "5",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "when": 1771837291154,
+      "tag": "0000_spooky_amphibian",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "when": 1771837291155,
+      "tag": "0001_chat",
+      "breakpoints": true
+    }
+  ]
+}

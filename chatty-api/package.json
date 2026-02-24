@@ -1,0 +1,30 @@
+{
+  "name": "crm-api-ts",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "db:generate": "npm run build && drizzle-kit generate",
+    "db:migrate": "npm run build && drizzle-kit migrate",
+    "db:push": "npm run build && drizzle-kit push"
+  },
+  "dependencies": {
+    "@crm/shared-types": "file:../packages/shared-types",
+    "@hono/node-server": "^1.19.9",
+    "better-auth": "^1.4.0",
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.36.4",
+    "hono": "^4.12.0",
+    "openai": "^4.104.0",
+    "pg": "^8.13.1",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "@types/pg": "^8.11.10",
+    "drizzle-kit": "^0.30.6",
+    "tsx": "^4.7.1",
+    "typescript": "^5.8.3"
+  }
+}

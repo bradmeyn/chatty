@@ -1,0 +1,15 @@
+{
+  "name": "crm-monorepo",
+  "private": true,
+  "workspaces": [
+    "crm-api-ts",
+    "crm-frontend",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:api": "npm run dev -w crm-api-ts",
+    "dev:frontend": "npm run dev -w crm-frontend",
+    "build": "npm run build -ws --if-present",
+    "typecheck": "npm run typecheck -w crm-frontend && npm run build -w crm-api-ts"
+  }
+}
