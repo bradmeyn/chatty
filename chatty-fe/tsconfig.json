@@ -8,7 +8,7 @@
     "moduleResolution": "Bundler",
     "baseUrl": ".",
     "paths": {
-      "@crm/shared-types": ["../packages/shared-types/src/index.ts"],
+      "@chatty/shared-types": ["../packages/shared-types/src/index.ts"],
       "@/*": ["./src/*"],
       "@auth/*": ["./src/lib/features/auth/*"],
       "@clients/*": ["./src/lib/features/clients/*"],

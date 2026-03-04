@@ -5,12 +5,10 @@
     "strict": true,
     "verbatimModuleSyntax": true,
     "skipLibCheck": true,
-    "types": [
-      "node"
-    ],
+    "types": ["node"],
     "baseUrl": ".",
     "paths": {
-      "@crm/shared-types": ["../packages/shared-types/src/index.ts"]
+      "@chatty/shared-types": ["../packages/shared-types/src/index.ts"]
     },
     "jsx": "react-jsx",
     "jsxImportSource": "hono/jsx",

@@ -10,7 +10,7 @@
     "db:push": "npm run build && drizzle-kit push"
   },
   "dependencies": {
-    "@crm/shared-types": "file:../packages/shared-types",
+    "@chatty/shared-types": "file:../packages/shared-types",
     "@hono/node-server": "^1.19.9",
     "better-auth": "^1.4.0",
     "dotenv": "^16.4.7",

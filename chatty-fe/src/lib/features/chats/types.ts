@@ -1,1 +1,1 @@
-export type { Chat, ChatMessage, ChatRole } from "@crm/shared-types";
+export type { Chat, ChatMessage, ChatRole } from "@chatty/shared-types";

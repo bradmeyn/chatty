@@ -22,7 +22,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      "@crm/shared-types": path.resolve(
+      "@chatty/shared-types": path.resolve(
         __dirname,
         "../packages/shared-types/src",
       ),

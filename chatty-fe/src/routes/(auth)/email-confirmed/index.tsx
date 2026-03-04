@@ -41,7 +41,7 @@ export default function EmailConfirmedPage() {
       return {
         icon: <CheckCircle className="h-12 w-12 text-green-600" />,
         title: "Email Confirmed! 🎉",
-        message: "Welcome to CRM! Your account is now active.",
+        message: "Welcome to Chatty! Your account is now active.",
         variant: "default" as const,
       };
     }
@@ -85,8 +85,7 @@ export default function EmailConfirmedPage() {
                     search: { redirect: undefined },
                   })
                 }
-                className="w-full"
-              >
+                className="w-full">
                 Continue to Login
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
@@ -96,7 +95,7 @@ export default function EmailConfirmedPage() {
 
         <div className="text-center">
           <p className="text-xs text-gray-500">
-            Welcome to your CRM journey! We're excited to have you on board.
+            Welcome to your Chatty journey! We're excited to have you on board.
           </p>
         </div>
       </div>

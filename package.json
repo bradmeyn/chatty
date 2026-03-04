@@ -1,5 +1,5 @@
 {
-  "name": "crm-monorepo",
+  "name": "chatty",
   "private": true,
   "workspaces": [
     "chatty-api",

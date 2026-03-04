@@ -1,4 +1,4 @@
-import { type AuthSessionResponse, type AuthUser } from "@crm/shared-types";
+import { type AuthSessionResponse, type AuthUser } from "@chatty/shared-types";
 import { type LoginCredentials, type RegisterCredentials } from "./schemas";
 import { api, type ApiError } from "@services/api";
 import axios from "axios";
@@ -68,7 +68,9 @@ export async function logout() {
 
 export async function getCurrentUser(): Promise<User | null> {
   try {
-    const response = await api.get<AuthSessionResponse | null>("/auth/get-session");
+    const response = await api.get<AuthSessionResponse | null>(
+      "/auth/get-session",
+    );
     return response.data?.user ?? null;
   } catch (error) {
     if (
