@@ -1,5 +1,13 @@
 import { relations } from "drizzle-orm";
-import { index, pgEnum, pgTable, text, timestamp, uuid, varchar } from "drizzle-orm/pg-core";
+import {
+  index,
+  pgEnum,
+  pgTable,
+  text,
+  timestamp,
+  uuid,
+  varchar,
+} from "drizzle-orm/pg-core";
 import { authUser } from "./auth.js";
 
 export const chatRole = pgEnum("chat_role", ["USER", "ASSISTANT", "SYSTEM"]);
@@ -20,9 +28,7 @@ export const chats = pgTable(
       .defaultNow()
       .$onUpdate(() => new Date()),
   },
-  (table) => ({
-    createdByIdx: index("chat_created_by_idx").on(table.createdById),
-  })
+  (table) => [index("chat_created_by_idx").on(table.createdById)],
 );
 
 export const chatMessages = pgTable(
@@ -41,9 +47,7 @@ export const chatMessages = pgTable(
       .notNull()
       .defaultNow(),
   },
-  (table) => ({
-    chatIdx: index("chat_message_chat_idx").on(table.chatId),
-  })
+  (table) => [index("chat_message_chat_idx").on(table.chatId)],
 );
 
 export const chatRelations = relations(chats, ({ one, many }) => ({
